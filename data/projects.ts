@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Full-Stack Authentication Application",
+    title: "Authentication Application",
     description:
       "A robust full-stack authentication application with a React frontend and a Node.js backend using Express.js. Secure user authentication and authorization are handled using JSON Web Tokens (JWT) and bcrypt for password hashing. The application is developed with TypeScript to ensure type safety and enhanced code quality throughout both the frontend and backend.",
     technologies: [
@@ -54,13 +54,14 @@ export const projects = [
       "JWT",
       "bcrypt",
       "TypeScript",
+      "Tailwind",
     ],
     imageUrl: require("@/assets/images/auth.png"),
     link: "https://github.com/mahmoudjd/Authenticationapp",
   },
   {
     id: 5,
-    title: "Full-Stack ToDo-Application",
+    title: "ToDo-Application",
     description:
       "A robust full-stack ToDo application with a React frontend and a Node.js backend using Express.js. The application is developed with TypeScript to ensure type safety and enhanced code quality throughout both the frontend and backend.",
     technologies: [

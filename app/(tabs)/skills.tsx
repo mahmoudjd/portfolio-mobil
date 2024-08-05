@@ -1,21 +1,9 @@
 import { StyleSheet, FlatList } from "react-native";
-
-import { Text, View } from "@/components/Themed";
+import { View } from "@/components/Themed";
 import { skills } from "@/data/skills";
+import SkillItem from "@/components/SkillItem";
 
-interface Props {
-  category: string;
-  details: string[];
-}
-const SkillItem = ({ category, details }: Props) => {
-  return (
-    <View style={styles.skillElem}>
-      <Text style={styles.category}>{category}</Text>
-      <Text style={styles.details}>{details.join(", ")}</Text>
-    </View>
-  );
-};
-export default function SkillsScreen() {
+const SkillsScreen = () => {
   return (
     <View style={styles.container}>
       <FlatList
@@ -27,7 +15,9 @@ export default function SkillsScreen() {
       />
     </View>
   );
-}
+};
+
+export default SkillsScreen;
 
 const styles = StyleSheet.create({
   container: {
@@ -37,22 +27,5 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: 8,
     backgroundColor: "rgb(17,24,34)",
-  },
-  skillElem: {
-    borderRadius: 8,
-    marginVertical: 10,
-    padding: 12,
-    backgroundColor: "rgb(31,41,55)",
-  },
-  category: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: "rgb(34, 197, 96)",
-  },
-  details: {
-    marginTop: 8,
-    fontWeight: "600",
-    fontSize: 16,
-    color: "#ccc",
   },
 });

@@ -11,6 +11,7 @@ export default function ProjectsScreen() {
         data={projects}
         renderItem={({ item }) => (
           <ProjectItem
+            id={item.id}
             title={item.title}
             description={item.description}
             technologies={item.technologies}
