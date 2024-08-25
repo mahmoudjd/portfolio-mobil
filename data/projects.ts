@@ -77,6 +77,24 @@ export const projects = [
   },
   {
     id: 6,
+    title: "Tasks-manager",
+    description:
+      "Dieses Projekt ist ein Task-Manager mit integriertem Authentifizierungssystem. Benutzer können Accounts erstellen und ihre eigenen Aufgaben verwalten.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "jsonwebtoken",
+      "bcrypt",
+      "Tailwindcss",
+      "TypeScript",
+    ],
+    imageUrl: require("@/assets/images/tasks-manager.png"),
+    link: "https://github.com/mahmoudjd/tasks-manager",
+  },
+  {
+    id: 7,
     title: "Portfolio Mahmoud Al Jarad",
     description:
       "A personal portfolio website showcasing my projects, skills, and experiences. Built with React and TypeScript for a robust and type-safe front-end, and styled using Tailwind CSS for a modern and responsive design. The site serves as a central hub for potential employers and collaborators to view my work and get in touch with me.",

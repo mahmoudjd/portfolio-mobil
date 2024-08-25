@@ -34,7 +34,7 @@ const ProjectScreen = () => {
       <View style={styles.subcontainer}>
         <Text style={styles.subtitle}>Technologies:</Text>
         {project.technologies.map((tech, index) => (
-          <Text style={styles.text} key={index}>
+          <Text style={[styles.text, { marginLeft: 4 }]} key={index}>
             <FontAwesome name="circle" color="rgb(34, 197, 94)" size={10} />
             {" " + tech}
           </Text>
